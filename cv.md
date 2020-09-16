@@ -1,6 +1,6 @@
-# Curriculum Vitae
+## Curriculum Vitae
 ---
-## Nikita Bashurov
+# Nikita Bashurov
 * Email: [nikita.bashurov.92@gmail.com](nikita.bashurov.92@gmail.com)
 * Phone: 00 48 537 099 221
 
