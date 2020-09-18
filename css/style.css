@@ -137,6 +137,11 @@ body {
 .cv {
   box-shadow: 10px 10px 10px #3B393C;
 }
+@media (max-width: 500px) {
+  .cv {
+    box-shadow: inherit;
+  }
+}
 .cv__row {
   display: flex;
   font-size: 0;
@@ -183,6 +188,12 @@ body {
     height: 40vh;
   }
 }
+@media (max-width: 500px) {
+  .content__image {
+    width: 49vw;
+    height: 30vh;
+  }
+}
 @media (min-width: 1400px) {
   .content__image {
     width: 10vw;
@@ -191,8 +202,8 @@ body {
 }
 @media (max-height: 400px) {
   .content__image {
-    width: 15vw;
-    height: 33vh;
+    width: 60vw;
+    height: 60vh;
   }
 }
 .block {
@@ -227,7 +238,7 @@ body {
   margin-bottom: 2vh;
 }
 .block__list span {
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 .skills__list {
@@ -321,7 +332,8 @@ body {
 }
 @media (max-height: 768px) {
   .main__left li {
-    margin-bottom: 8vh;
+    margin-bottom: 12vh;
+    font-size: 2.4vh;
   }
 }
 .main__left li:before {
@@ -348,6 +360,11 @@ body {
 @media (max-height: 600px) {
   .main__left li:before {
     right: 69%;
+  }
+}
+@media (max-width: 400px) {
+  .main__left li:before {
+    right: 67.5%;
   }
 }
 .main__left li:first-child {
