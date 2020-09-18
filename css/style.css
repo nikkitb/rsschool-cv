@@ -194,10 +194,10 @@ body {
     height: 30vh;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .content__image {
     width: 60vw;
-    height: 30vh;
+    height: 28vh;
   }
 }
 @media (min-width: 1400px) {
