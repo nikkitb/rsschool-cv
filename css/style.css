@@ -188,7 +188,7 @@ body {
     height: 40vh;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content__image {
     width: 49vw;
     height: 30vh;
@@ -354,7 +354,7 @@ body {
 }
 @media (max-width: 768px) {
   .main__left li:before {
-    right: 69%;
+    right: 68.5%;
   }
 }
 @media (max-height: 600px) {
