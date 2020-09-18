@@ -47,7 +47,7 @@ body {
   min-width: 320px;
   line-height: 1;
   font-size: 16px;
-  font-family: "Raleway", serif;
+  font-family: "Raleway", sans-serif;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -312,7 +312,7 @@ body {
 }
 @media (min-width: 1400px) {
   .main__left li:before {
-    right: 371px;
+    right: 380px;
   }
 }
 .main__left li:first-child {
