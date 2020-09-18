@@ -177,6 +177,11 @@ body {
   border-radius: 50%;
   border: 3px solid #17B9DF;
 }
+@media (max-width: 768px) {
+  .content__image {
+    width: 35vw;
+  }
+}
 .block {
   color: #F6F6F6;
   text-align: left;
@@ -318,6 +323,11 @@ body {
 @media (min-width: 1400px) {
   .main__left li:before {
     right: 380px;
+  }
+}
+@media (max-width: 768px) {
+  .main__left li:before {
+    right: 390px;
   }
 }
 .main__left li:first-child {
