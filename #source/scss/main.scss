@@ -1,0 +1,167 @@
+@import "fonts";
+@import "reset";
+@import "base";
+@import "mixins";
+
+.page {
+	position:absolute;
+	width: 100%;
+	height:auto;
+	top:0; left: 0;
+	background-color: $bg;
+}
+
+.cv {
+	&__row {
+		@include flexbox();
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	&__column {
+		position:absolute;
+		top: 0;
+		left: 0;
+		&__left {
+			flex:0 1 33.333%;
+			background-color: $accent;
+			padding:4vh 5vh;
+		}
+		&__right {
+			flex:1 1 66.333%;
+			background-color: $bg2;
+			font-size: 20px;
+			padding:6vh 5vh;
+		}
+	}
+	&__content {}
+}
+.content {
+	text-align: center;
+	&__image {
+		display:inline-block;
+		background-color: $accent;
+		padding:4px;
+		width:12.5vw;
+		height:26.5vh;
+		border-radius: 50%;
+		border:3px solid $contrast;
+	}
+	&__block {}
+}
+.block {
+	color:$bg2;
+	text-align:left;
+	&__header {
+		text-transform: uppercase;
+		font-weight: 60;
+		font-size: 3.8vh;		
+		line-height: 4.9vh;
+		margin: 5vh 0 3vh 0;
+		border-bottom: 1px solid $bg2;
+	}
+	&__text {
+		font-size: 2.5vh;
+		line-height: 25px;
+		color: $contrast;
+	}
+	&__item, a {
+		color: $bg2;
+		display: block;
+		font-size: 2vh;
+		line-height: 15px;
+		@include anim (.3s, 0s);
+	}
+	a:hover {
+		color: $contrast;
+		@include anim (.3s, 0s);
+	}
+	&__list {
+		margin-bottom: 2vh;
+	}
+}
+
+.skills {
+	&__list {
+		@include flexbox();
+		flex-wrap: wrap;
+		justify-content: space-between;
+		vertical-align: center;
+	}
+	&__item {
+		flex: 0 1 50%;
+		line-height:3vh;
+		vertical-align: top;
+	}
+	&__counter {
+		margin-top: .9vh;
+		flex: 0 0 40%;
+		display:inline-block;
+		background:linear-gradient(to right, $contrast 15%, $bg2 15%);
+		height: 6px;
+		width: 100%;
+		vertical-align: center;
+	}
+	&__item2 {
+		background:linear-gradient(to right, $contrast 60%, $bg2 50%);
+	}
+	&__item3 {
+		background:linear-gradient(to right, $contrast 90%, $bg2 30%);
+	}
+}
+
+.header {
+	color:$accent;
+	&__forward {
+		color:$contrast;
+		font-size: 5vh;
+		font-weight: bold;
+		text-transform: uppercase;
+		span {
+			color:$accent;
+		}
+	}
+	&__sub {
+		margin:0;
+		font-weight:bold;
+		margin-bottom: 3vh;
+		span{
+			color:red;
+			position:relative;
+			top:3px;
+		}
+	}
+	&__text {
+		font-size: 2vh;
+		font-family: 'Curier';
+		font-weight: 300;
+		letter-spacing: .05vw;
+		line-height:1.25;
+		opacity: .8;
+	}
+}
+
+.main {
+	&__sub {
+		color: $accent;
+		text-transform: uppercase;
+		font-weight: 60;
+		font-size: 3.8vh;		
+		line-height: 4.9vh;
+		margin: 2.3vh 0 3vh 0;
+		border-bottom: 1.5px solid $accent;
+		@media (max-height: 768px) {
+			margin: 6.5vh 0 3vh 0;
+		}
+	}
+	&__row {
+		@include flexbox();
+	}
+	&__column {
+		&__left {}
+	}
+}
+.main-column {
+	&__right {}
+}
+
