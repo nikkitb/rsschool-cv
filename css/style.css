@@ -296,7 +296,7 @@ body {
 .header__sub span {
   font-family: "Raleway";
   position: relative;
-  top: 5px;
+  top: 3px;
 }
 .header__text {
   font-size: 2vh;
@@ -365,7 +365,7 @@ body {
 }
 @media (max-height: 600px) {
   .main__left li:before {
-    right: 69%;
+    right: 68.5%;
   }
 }
 @media (max-width: 400px) {
