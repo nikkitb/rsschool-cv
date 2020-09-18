@@ -144,6 +144,11 @@ body {
   top: 0;
   left: 0;
 }
+@media (max-width: 768px) {
+  .cv__row {
+    flex-direction: column;
+  }
+}
 .cv__column {
   position: absolute;
   top: 0;
